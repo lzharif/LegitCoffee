@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Legit Coffee</string>
+    <string name="menu_name">Nama Menu</string>
+    <string name="detail">Detail Menu</string>
+    <string name="about">About</string>
+    <string name="order_this">Saya mau pesan ini!</string>
+    <string name="price">Rp.</string>
+    <string name="how_much">Mau Pesan Berapa?</string>
+    <string name="order">Pesan</string>
+    <string name="confirm_title">Konfirmasi Pesanan</string>
+    <string name="confirm_placeholder">Total: Rp. %1$d</string>
+    <string name="amount">Jumlah</string>
+    <string name="tag_legit_coffee">Tempat kopi dan hidup bersatu</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/textview_title_summary"
+            style="?android:textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:text="@string/confirm_title"
+            android:textAlignment="center" />
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_summary_order"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_title_summary"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin" />
+
+
+    <Button
+            android:id="@+id/btn_confirm_transaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:text="@string/confirm_placeholder"
+            android:textColor="@android:color/white" />
+
+</RelativeLayout>

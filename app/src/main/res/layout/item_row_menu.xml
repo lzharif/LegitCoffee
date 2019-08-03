@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_item_photo"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:layout_marginTop="8dp"
+            tools:src="@android:color/darker_gray"/>
+    <LinearLayout
+            android:id="@+id/layout_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="@dimen/activity_vertical_margin"
+            android:layout_toEndOf="@id/img_item_photo"
+            android:orientation="vertical">
+        <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="@string/menu_name"/>
+        <TextView
+                android:id="@+id/tv_item_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                tools:text="@string/detail"/>
+    </LinearLayout>
+
+    <TextView android:id="@+id/tv_item_price"
+            android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/img_item_photo"
+              android:layout_marginEnd="@dimen/activity_vertical_margin"
+              android:layout_marginBottom="8dp"
+              android:paddingTop="4dp"
+              android:layout_alignParentRight="true"
+              android:text="harga"/>
+</RelativeLayout>
